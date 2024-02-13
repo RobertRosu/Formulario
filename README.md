@@ -1,0 +1,2 @@
+--IMPORTANTE--
+- Ubicar la carpeta en */xampp/htdocs
