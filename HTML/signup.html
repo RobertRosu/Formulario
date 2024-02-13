@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Sign up</title>
+</head>
+<style>
+    body{
+        overflow:hidden;
+    }
+</style>
+<body>
+    <h1>Sign up</h1>
+    <form action="../PHP/signup.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <div class="password_field">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <button onclick=togglePassword() type="button"><span class="material-symbols-outlined visibility_password">
+                visibility
+                </span></button>
+        </div>
+        <div class="password_field">
+            <label for="retype_password">Retype password:</label>
+            <input type="password" name="retype_password" id="retype_password">
+            <button onclick=toggleRetypePassword() type="button"><span class="material-symbols-outlined visibility_retype_password">
+                visibility
+                </span></button>
+        </div>
+        <button type="submit">Sign up</button>
+        <div class="separator">
+            <hr>
+            <p>or</p>
+            <hr>
+        </div>
+        <p>you can <a href="login.html">login</a></p>
+    </form>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

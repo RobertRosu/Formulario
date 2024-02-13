@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+*, ::before, ::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body, html, :root{
+    height:100svh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:whitesmoke;
+    width:100%;
+}
+
+:root{
+    /*SUCCESS*/
+    --success-color: #155724;
+    --success-bg: #d4edda;
+    --success-border: #c3e6cb;
+
+    /*DANGER*/
+    --danger-color: #721c24;
+    --danger-bg: #f8d7da;
+    --danger-border: #f5c6cb;
+
+    /*WARNING*/
+    --warning-color: #856404;
+    --warning-bg: #fff3cd;
+    --warning-border: #ffeeba;
+}
+
+.success{
+    color:var(--success-color);
+    background-color: var(--success-bg);
+    border-color: var(--success-border);
+}
+
+.warning{
+    color:var(--warning-color);
+    background-color: var(--warning-bg);
+    border-color: var(--warning-border);
+}
+
+.danger{
+    color:var(--danger-color);
+    background-color: var(--danger-bg);
+    border-color:var(--danger-border);
+}
+
+form{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    padding:1rem;
+    width:25%;
+}
+
+form input{
+    display:block;
+    background-color: lightgray;
+    font-size:18px;
+    padding:.75rem;
+    margin-bottom:.5rem;
+    border:none;
+    outline:none;
+    border-radius:5px;
+}
+
+form label{
+    margin-bottom:.5rem;
+    font-size: 14px;
+}
+
+form button{
+    display:block;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    padding:.75rem;
+    margin-top:1.5rem;
+    border-radius:5px;
+    font-size:16px;
+    background-color:green;
+    color:white;
+    transition:.2s;
+}
+
+form button:hover{
+    background-color:rgb(0, 103, 0);
+}
+
+.password_field{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    width:100%;
+}
+
+.password_field button{
+    display:flex;
+    position:absolute;
+    background-color: inherit;
+    right:0;
+    color:grey;
+    transition:none;
+}
+
+.password_field button:hover{
+    background-color:inherit;
+}
+
+.separator{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin:2rem 0;
+}
+
+.separator hr{
+    width:30%;
+}
+
+.separator p{
+    padding:0 .5rem;
+}
+
+form p{
+    text-align: center;
+}
+
+form p a{
+    color:green;
+    text-decoration: none;
+}
+
+form p a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:1400px){
+    form{
+        width:85%;
+    }
+}
+

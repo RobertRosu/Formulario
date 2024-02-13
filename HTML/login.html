@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Login</title>
+</head>
+<style>
+    body{
+        overflow:hidden;
+    }
+</style>
+<body>
+    <h1>Login</h1>
+    <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <div class="password_field">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <button onclick=togglePassword() type="button"><span class="material-symbols-outlined visibility_password">
+                visibility
+                </span></button>
+        </div>
+        <button type="submit">Sign up</button>
+        <div class="separator">
+            <hr>
+            <p>or</p>
+            <hr>
+        </div>
+        <p>you can <a href="signup.html">sign up</a></p>
+    </form>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
